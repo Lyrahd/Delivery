@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242729"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:scaleType="fitXY"
+        android:layout_above="@+id/txtFname"
+        android:src="@drawable/image"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50px" />
+
+    <EditText
+        android:id="@+id/txtFname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#cacaca"
+        android:layout_marginBottom="15dp"
+        android:hint="E-mail Address/Username"
+        android:textColorHint="#c2c2c2"/>
+
+
+    <EditText
+        android:id="@+id/lblPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:textColor="#cacaca"
+        android:hint="Password"
+        android:textColorHint="#c2c2c2"
+        android:password="true"
+        android:layout_below="@+id/txtFname"
+        android:layout_marginBottom="15dp"
+        android:layout_toLeftOf="@+id/btnShow"
+        android:layout_toStartOf="@+id/btnShow" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="@android:color/black"
+        android:text="LOG IN"
+        android:shadowColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_below="@+id/lblPass"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Show"
+        android:id="@+id/btnShow"
+        android:layout_alignTop="@+id/lblPass"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/lblPass" />
+
+    <Button
+        android:id="@+id/lblSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="@android:color/black"
+        android:text="SIGN UP"
+        android:shadowColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
